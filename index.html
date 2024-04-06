@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive GAMING WEBSITE</title>
+
+    <link rel="stylesheet"  type="text/css" href="./style.css">
+
+    <!-- boxicon link  -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- remixicon link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lakki+Reddy&family=Poppins:ital,wght@0,500;1,200;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <a  href="https://brawlstats.com/" class="logo"> BRAWL-STATS</a>
+        <ul class="navlist">
+            <li><a onclick="home()" href="#">Home</a></li>
+            <li><a onclick="brawler()" href="#">Brawlers</a></li>
+            <li><a onclick="about()" href="#">About</a></li>
+            <li><a onclick="contact()">Contact Us</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h5>On Trending</h5>
+            <h4>Supercell</h4>
+            <h1>Let's Go</h1>
+            <p>Build and brawl! <br> Join solo matches or 3-on-3 battles
+            with friends across a variety of modes for games under three minutes!!</p>
+            <audio id="musicc" src="theme.mp3" ></audio>
+            <button onclick="toggleAudio()">Music <i class="ri-volume-up-fill"></i></button>
+            <a href="https://youtu.be/WEY708twW_g" class="ctaa">Brawl Talk <i class="ri-play-fill"></i></a>
+        </div>
+        <div onclick="playRandomMusic()" class="hero-img">
+            <img src="cover.png" alt="">
+        </div>
+    </section>
+    <div class="icons">
+        <a class="insta" href="https://www.instagram.com/brawlstars/?hl=en"><i class="ri-instagram-line"></i></a>
+        <a class="twit" href="https://twitter.com/BrawlStars"><i class="ri-twitter-line"></i></a>
+        <a class="yt" href="https://www.youtube.com/@BrawlStars"><i class="ri-youtube-line"></i></a>
+    </div>
+    <div class="scroll-down">
+            <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
+        </div>
+
+        <!-- scrollreveal effect -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- custom js link -->
+        <script src="./script.js"></script>
+</body>
+</html>

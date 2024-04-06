@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Brawl Stars Brawlers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(245.59deg, #7fa0dd 0%, #3285f1 28.53%, #1f3d6b 75.52%);      
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-top: 50px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .brawler {
+      text-align: center;
+      background-color: #2f19eeb5;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .brawler img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: contain;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .brawler h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .image-wrapper {
+      display: inline-block;
+    }
+
+    .image-container {
+      position: relative;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+    }
+
+    .gif-image {
+      display: none;
+      width: 100%;
+      height: fit-content;
+      object-fit: contain;
+    }
+    .image-wrapper img{
+      object-fit: contain;
+    }
+
+     @media only screen and (max-width: 768px) {
+      .container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Brawlers</h1>
+  <div class="container">
+    <div class="brawler">
+      <!-- <img src="brawlers/shelly.webp" alt=""> -->
+      <div class="image-wrapper">
+      <div class="image-container">
+        <img class="image" src="brawlers/shelly.webp">
+        <img class="gif-image" src="brawlers/shellyg.gif">
+        <audio  class="audio">
+          <source src="MShelly/Shelly_start_02.ogg" type="MShelly/ogg">
+        </audio>
+      </div>
+      </div>
+      <h2>Shelly</h2>
+    </div>
+    <div class="brawler">
+      <!-- <img src="brawlers/nita.webp" alt=""> -->
+      <div class="image-wrapper">
+        <div class="image-container">
+        <img class="image" src="brawlers/nita.webp">
+        <img class="gif-image" src="brawlers/nitag.webp">
+      </div>
+    </div>
+      <h2>Nita</h2>
+    </div>
+    <div class="brawler">
+        <!-- <img src="brawlers/jess.png" alt=""> -->
+        <div class="image-wrapper">
+          <div class="image-container">
+            <img class="image" src="brawlers/jessie.png">
+            <img class="gif-image" src="brawlers/jessg.webp">
+          </div>
+          </div>
+        <h2>Jessie</h2>
+    </div>
+    <div class="brawler">
+        <!-- <img src="brawlers/Dyna.webp" alt=""> -->
+        <div class="image-wrapper">
+          <div class="image-container">
+            <img class="image" src="brawlers/Dyna.webp">
+            <img class="gif-image" src="brawlers/dynag.webp">
+          </div>
+          </div>
+        <h2>Dynamike</h2>
+    </div>
+    <div class="brawler">
+      <!-- <img src="brawlers/Emz.webp" alt=""> -->
+      <div class="image-wrapper">
+        <div class="image-container">
+          <img class="image" src="brawlers/meg.webp">
+          <img class="gif-image" src="brawlers/meggg.webp">
+        </div>
+        </div>
+      <h2>Meg</h2>
+    </div>
+    <div class="brawler">
+      <!-- <img src="brawlers/griff.webp" alt=""> -->
+      <div class="image-wrapper">
+        <div class="image-container">
+          <img class="image" src="brawlers/griff.webp">
+          <img class="gif-image" src="brawlers/griffg.gif">
+        </div>
+        </div>
+      <h2>Griff</h2>
+    </div>    
+    <div class="brawler">
+      <!-- <img src="brawlers/brock.webp" alt=""> -->
+      <div class="image-wrapper">
+        <div class="image-container">
+          <img class="image" src="brawlers/brock.webp">
+          <img class="gif-image" src="brawlers/brockg.webp">
+        </div>
+        </div>
+      <h2>Brock</h2>
+    </div>    
+    <div class="brawler">
+      <!-- <img src="brawlers/Bo.webp" alt=""> -->
+      <div class="image-wrapper">
+        <div class="image-container">
+          <img class="image" src="brawlers/Bo.webp">
+          <img class="gif-image" src="brawlers/bog.webp">
+        </div>
+        </div>
+      <h2>Bo</h2>
+    </div>    
+    <div class="brawler">
+      <!-- <img src="brawlers/poco.webp" alt=""> -->
+      <div class="image-wrapper">
+        <div class="image-container">
+          <img class="image" src="brawlers/poco.webp">
+          <img class="gif-image" src="brawlers/pocog.webp">
+        </div>
+        </div>
+      <h2>Poco</h2>
+    </div>
+    <div class="brawler">
+      <img src="brawlers/bea.png" alt="">
+      <h2>Bea</h2>
+    </div>
+  </div>
+
+
+  <script>
+    var imageContainers = document.querySelectorAll('.image-container');
+    imageContainers.forEach(function(container) {
+      var image = container.querySelector('.image');
+      var gifImage = container.querySelector('.gif-image');
+      var audio = container.querySelector('.audio');
+      var staticSrc = image.src;
+      var gifSrc = gifImage.src;
+
+      container.addEventListener('mouseenter', function() {
+        image.style.display = 'none';
+        gifImage.style.display = 'block';
+        // audio.play();
+      });
+      container.addEventListener('mouseleave', function() {
+        image.style.display = 'block';
+        gifImage.style.display = 'none';
+        audio.pause();
+        audio.currentTime = 0;
+      });
+
+      gifImage.addEventListener('click' , function() {
+        audio.currentTime = 0;
+        audio.play();
+      });
+    });
+
+  </script>
+</body>
+</html>
